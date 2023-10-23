@@ -1,5 +1,17 @@
 /* 
 *******
+COLOR
+********
+*/
+
+:root {
+  --bg-blue: #0e38b5;
+  --bg-azurro: #1c83c1;
+  --bg-bage: #ccb2a3;
+}
+
+/* 
+*******
 HEADER
 ********
 */
@@ -16,4 +28,39 @@ header .raw div {
   padding: 30px 0;
   color: white;
   background-color: red;
+}
+
+/* 
+*******
+MAIN
+********
+*/
+
+main section:nth-child(odd) {
+  background-color: #1abc9c;
+
+  /* debug */
+  height: 31.25rem;
+}
+
+.row .col-sm-12 {
+  /* debug */
+  height: 350px;
+}
+
+.row .col-sm-12 .content {
+  /* debug */
+  height: 100%;
+}
+
+.bg-blue {
+  background-color: var(--bg-blue);
+}
+
+.bg-azzurro {
+  background-color: var(--bg-azurro);
+}
+
+.bg-bage {
+  background-color: var(--bg-bage);
 }
