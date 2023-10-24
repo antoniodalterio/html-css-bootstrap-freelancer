@@ -1,9 +1,11 @@
+@import './_partyal/componet.css';
+
 /* 
 *******
 COLOR
 ********
-*/
 
+*/
 :root {
   --bg-head-foot: #2c3e50;
   --bg-blue: #0e38b5;
@@ -27,7 +29,6 @@ header .row div {
   /* debug */
   background-color: red;
   height: 60px;
-  padding-top: 20px;
 }
 
 /* 
@@ -40,16 +41,6 @@ main section:nth-child(odd) {
   background-color: #1abc9c;
 
   /* debug */
-}
-
-.debug .row .col-sm-12 {
-  /* debug */
-  height: 350px;
-}
-
-.row .col-sm-12 .content {
-  /* debug */
-  height: 100%;
 }
 
 .bg-blue {

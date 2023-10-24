@@ -1,0 +1,15 @@
+/* 
+*****************
+COMPONENTS
+*****************
+*/
+
+.ad-content-img {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ad-content-img img {
+  width: 100%;
+  height: auto;
+}
