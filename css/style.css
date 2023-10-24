@@ -11,11 +11,22 @@ COLOR
   --bg-blue: #0e38b5;
   --bg-secondary: #1abc9c;
   --text-secondary: #333333;
+  --text-secondary: #1abc9c;
+  --bg-Primary-200: #3a546d;
+}
+
+.ad-bg-primary-200 {
+  background-color: var(--bg-Primary-200);
 }
 
 .ad-text-primary {
   color: var(--bg-Primary);
 }
+
+.ad-text-secondary {
+  color: var(--text-secondary);
+}
+
 /* 
 *******
 HEADER
@@ -23,7 +34,7 @@ HEADER
 */
 
 header,
-footer {
+footer section {
   background-color: var(--bg-Primary);
 }
 
@@ -63,9 +74,3 @@ main section:nth-child(odd) {
 FOOTER
 ********
 */
-
-footer .row .col-lg-12 .footer-box {
-  /* debug */
-  height: 150px;
-  background-color: var(--bg-secondary);
-}
