@@ -24,13 +24,6 @@ footer {
   background-color: var(--bg-head-foot);
 }
 
-header .row div {
-  color: white;
-  /* debug */
-  background-color: red;
-  height: 60px;
-}
-
 /* 
 *******
 MAIN
@@ -39,24 +32,10 @@ MAIN
 
 main section:nth-child(odd) {
   background-color: #1abc9c;
-
-  /* debug */
 }
 
-.bg-blue {
-  background-color: var(--bg-blue);
-}
-
-.bg-azzurro {
-  background-color: var(--bg-azzurro);
-}
-
-.bg-bage {
-  background-color: var(--bg-bage);
-}
-
-.row .bg-primary-subtle {
-  height: 100%;
+.col-8 .ad-content-img img {
+  width: 250px;
 }
 
 /* 
