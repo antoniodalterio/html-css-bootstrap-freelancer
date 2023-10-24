@@ -7,12 +7,15 @@ COLOR
 
 */
 :root {
-  --bg-head-foot: #2c3e50;
+  --bg-Primary: #2c3e50;
   --bg-blue: #0e38b5;
-  --bg-azzurro: #1c83c1;
-  --bg-bage: #ccb2a3;
+  --bg-secondary: #1abc9c;
+  --text-secondary: #333333;
 }
 
+.ad-text-primary {
+  color: var(--bg-Primary);
+}
 /* 
 *******
 HEADER
@@ -21,7 +24,7 @@ HEADER
 
 header,
 footer {
-  background-color: var(--bg-head-foot);
+  background-color: var(--bg-Primary);
 }
 
 /* 
@@ -31,11 +34,28 @@ MAIN
 */
 
 main section:nth-child(odd) {
-  background-color: #1abc9c;
+  background-color: var(--bg-secondary);
 }
 
-.col-8 .ad-content-img img {
+#portfolio h2,
+#contact h2 {
+  color: var(--text-secondary);
+}
+
+#jumbo .ad-content-img img {
   width: 250px;
+}
+#jumbo p,
+#about p {
+  font-size: 20px;
+}
+
+#about .fa-download {
+  margin-right: 5px;
+}
+
+#contact form .ad-text-primary {
+  font-size: 20px;
 }
 
 /* 
@@ -47,5 +67,5 @@ FOOTER
 footer .row .col-lg-12 .footer-box {
   /* debug */
   height: 150px;
-  background-color: #1abc9c;
+  background-color: var(--bg-secondary);
 }
