@@ -16,14 +16,9 @@ COMPONENTS
 
 .component-star::after,
 .component-star::before {
-  content: '\2015\2015';
+  content: '\2015\2015\2015 ';
   font-size: 2.5rem;
-}
-
-#about .component-star::after,
-#about .component-star::before {
-  content: '\2015';
-  font-size: 2.5rem;
+  padding: 0 0.625rem;
 }
 
 .component-star {

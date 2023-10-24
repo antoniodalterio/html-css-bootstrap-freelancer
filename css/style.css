@@ -1,30 +1,18 @@
 @import './_partyal/componet.css';
+@import './_partyal/common.css';
 
 /* 
 *******
 COLOR
 ********
-
 */
 :root {
   --bg-Primary: #2c3e50;
   --bg-blue: #0e38b5;
   --bg-secondary: #1abc9c;
   --text-secondary: #333333;
-  --text-secondary: #1abc9c;
+  --text-three: #1abc9c;
   --bg-Primary-200: #3a546d;
-}
-
-.ad-bg-primary-200 {
-  background-color: var(--bg-Primary-200);
-}
-
-.ad-text-primary {
-  color: var(--bg-Primary);
-}
-
-.ad-text-secondary {
-  color: var(--text-secondary);
 }
 
 /* 
@@ -44,33 +32,63 @@ MAIN
 ********
 */
 
-main section:nth-child(odd) {
-  background-color: var(--bg-secondary);
-}
-
-#portfolio h2,
-#contact h2 {
-  color: var(--text-secondary);
-}
-
 #jumbo .ad-content-img img {
-  width: 250px;
+  width: 15.625rem;
 }
 #jumbo p,
 #about p {
-  font-size: 20px;
+  font-size: 1.5625rem;
 }
 
 #about .fa-download {
-  margin-right: 5px;
+  margin-right: 0.3125rem;
 }
 
 #contact form .ad-text-primary {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 /* 
 *******
-FOOTER
+MEDIA QUERY
 ********
 */
+/* 
+da 992 in poi
+*/
+
+@media screen and (max-width: 992px) {
+  .component-star::after,
+  .component-star::before {
+    content: '\2015\2015 ';
+    font-size: 2.5rem;
+    padding: 0;
+  }
+
+  .component-star {
+    font-size: 25px;
+    display: inline;
+  }
+
+  #about .component-star::after,
+  #about .component-star::before,
+  #contact .component-star::after,
+  #contact .component-star::before {
+    content: '\2015';
+    font-size: 2.5rem;
+  }
+
+  #jumbo h2 {
+    font-size: 35px;
+  }
+  #portfolio h2,
+  #about h2,
+  #contact h2 {
+    font-size: 25px;
+  }
+
+  #jumbo p,
+  #about p {
+    font-size: 1rem;
+  }
+}
